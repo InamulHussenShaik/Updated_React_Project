@@ -166,6 +166,7 @@ export function ChartAreaInteractive() {
   })
   : []
 
+  
   return (
     <Card className="@container/card">
       <CardHeader>
@@ -272,23 +273,27 @@ export function ChartAreaInteractive() {
                 />
               }
             />
-            <Area
-              dataKey="mobile"
-              type="natural"
-              fill="url(#fillMobile)"
-              stroke="var(--color-mobile)"
-              stackId="a"
-            />
-            <Area
-              dataKey="desktop"
-              type="natural"
-              fill="url(#fillDesktop)"
-              stroke="var(--color-desktop)"
-              stackId="a"
-            />
+        <Area
+  dataKey="mobile"
+  type="natural"
+  fill="url(#fillMobile)"
+  stroke="var(--color-mobile)"
+  stackId="a"
+  activeDot={{ r: 6, fill: '#ffffff', stroke: '#ffffff', strokeWidth: 2 }}
+/>
+<Area
+  dataKey="desktop"
+  type="natural"
+  fill="url(#fillDesktop)"
+  stroke="var(--color-desktop)"
+  stackId="a"
+  activeDot={{ r: 6, fill: '#ffffff', stroke: '#ffffff', strokeWidth: 2 }}
+/>
+
           </AreaChart>
         </ChartContainer>
       </CardContent>
     </Card>
   )
+  
 }
