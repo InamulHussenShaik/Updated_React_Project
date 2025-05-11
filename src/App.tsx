@@ -10,6 +10,7 @@ import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
 
 import Page from "./components/Layout/dashboard";
 import './App.css'
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
               <Route path="/project" element={<Project />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/teams" element={<Team />} />
-
+              <Route path="/settings" element={<Settings />} />
         </Routes>
             </div>
           </div>
